@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <title></title>
+</head>
+<body>
+
+  <script>
+      var map = ['N', 'E', 'S', 'E', 'W', 'N'] 
+  
+  
+      function simpleDirections (directions) {
+        
+        // make a copy of the input array
+        var newMap = map.slice(0);
+
+        // first loop goes over every element
+        for (var i = 0; i < directions.length; i++) {
+
+          var myCount = 0;	
+          // loop over every element in the copy and see if it's the same
+          for (var w = 0; w < newMap.length; w++) {
+            if (directions[i] == newMap[w]) {
+            // increase amount of times duplicate is found
+            myCount++;
+            // sets item to undefined
+            delete newMap[w];
+          }
+        } 
+
+        if (myCount > 0) {
+          var cardinal = new Object();
+          cardinal.value = directions[i];
+          cardinal.count = myCount;
+          map.push(a);
+        }
+      }
+      if (cadinal.n > cardinal.s) {
+        
+      }
+
+
+ return map;
+};
+console.log(simpleDirections(map));
+  
+  
+  
+  </script>
+  
+</body>
+</html>

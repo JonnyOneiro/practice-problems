@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <title></title>
+</head>
+<body>
+  
+  <script>
+
+      //problem
+      //Write a function that takes in a string
+      // and reverse the order of words with a length greater than 5
+      // example  "Hello my fellow warriors!"
+      //          "olleh my wollef sroirraw!"
+
+      //my pseudo code
+      // string can be many words first break it up at spaces and punctuations and 
+      // store words, spaces and punctuations in array
+      // loop through index of array 
+      //check if string length of characters is 5 or greater
+      //loop through the selected string in in reverse
+      //temp store reversed string
+      //push temp string back to index of array
+      // turn new array back to string
+      //return new string
+  
+    function reverseWordslongerThan5Letters (string) {
+      var stringArray = string.split(/([_\W])/);
+      var newArray = [];
+      for (var i = 0; i < stringArray.length; i++) {
+        if (stringArray[i].length >= 5) {
+          var splitString = stringArray[i].split('');
+          var reverseString = splitString.reverse();
+          var joinString = reverseString.join('');
+          newArray.push(joinString);
+        } else {
+          newArray.push(stringArray[i]);
+        }
+      }
+      var newString = newArray.join('');
+      return newString;
+    }
+   console.log(reverseWordslongerThan5Letters ("Hello my fellow warriors!"));
+   
+  </script>
+
+</body>
+</html>
