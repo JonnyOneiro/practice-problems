@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+      //make a dice roller that can roll any number of die with any number of sides
+
+
+
+      function diceRoller (dice) {
+        var castDie = dice.split(/[^0-9]/);  
+        var rolls = [];
+        for (var i = 0; i < castDie[0]; i++) {
+          rolls.push(Math.floor(Math.random() * castDie[1]) + 1);
+          console.log(rolls);
+        }
+        var totalRoll = rolls.reduce();  
+        return totalRoll, rolls;  
+      }
+      diceRoller('3d6');
+      console.log(totalRoll + ': ' + rolls);
+  
+  
+  </script>
+  
+</body>
+</html>
