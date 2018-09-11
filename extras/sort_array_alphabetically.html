@@ -1,0 +1,80 @@
+<!-- You will be writing a function that takes in a list of names as an array and will be sorting all these names by the first character of their name. The returned output will be an object with each key as the sorted letter and the value being an array of names -->
+
+<!--    psuedoCode
+        look a word in list
+        based on first letter of word 
+        add to container of list of that first letter
+        if other words are on in that first letter list
+        go by the next letter...
+        ..continue do this until the words are in alphabetical order
+        of the letter list
+        if no words are on that letter list
+        add word to new letter list of that first letter
+
+
+
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title></title>
+</head>
+<body>
+    <script>
+        //Input:
+        var students = [
+            "George",
+            "Perry",
+            "Esther",
+            "Gerry",
+            "Chase",
+            "Steve",
+            "Mia",
+            "Sarah",
+            "Kyle",
+            "David",
+            "Michael",
+            "Rachel",
+            "Randy",
+            "Jonathan",
+            "Jaytrin",
+            "Hank",
+            "Torrie"
+            ]
+
+            // Output: 
+
+            // C: ["Chase"]
+            // D: ["David"]
+            // E: ["Esther"]
+            // G: ["George", "Gerry"]
+            // H: ["Hank"]
+            // J: ["Jaytrin", "Jonathan"]
+            // K: ["Kyle"]
+            // M: ["Mia", "Michael"]
+            // P: ["Perry"]
+            // R: ["Rachel", "Randy"]
+            // S: ["Steve", "Sarah"]
+            // T: ["Torrie"]
+
+
+            function alphabetizeWords (array) {
+                var alphabeticalListObj = {};
+                
+                for (var i = 0; array.length; i++){
+                    if (array[i].CharAt(0)){
+
+
+                    } else {
+                        alphabeticalListObj.push(array[i][0] : [array[i]])
+                    }
+                }
+
+            }
+    
+    </script> 
+</body>
+</html>

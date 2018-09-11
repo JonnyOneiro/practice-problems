@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+</head>
+<body>
+    <script>
+        //make a function that takes an array og values and moves zeros to the end of array
+        //  ex      [false, 1,0,1,2,0,'a',3]
+        //  returns [false, 1,1,2,'a',3,0,0]
+
+        var array = [false, 1,0,1,2,0,'a',3];
+
+        function moveZeros(array){
+            for (var i = 0; array.length; i++) {
+                if (array[i] === 0) {
+                    array.push(array[i])
+                }
+            }
+            return array;
+        }
+        moveZeros(array);
+
+    </script>
+</body>
+</html>
